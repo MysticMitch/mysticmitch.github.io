@@ -21,7 +21,7 @@
     <form target="_blank" action="https://sunnah.com"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Hadithe lesen"/></form>
     <form target="_blank" action="https://youtu.be/IlnQ3PIHj2I"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Gebet erlernen"/></form>
     <form target="_blank" action="https://dl.dropboxusercontent.com/s/gtfavvjh82s7fna/Awakening%20from%20the%20sleep%20of%20headlessness.pdf?dl=0"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Gebetstexte"/></form>
-    <form action="#" onsubmit="showKonv()"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Konvertieren"/></form>
+    <form onsubmit="return false" onclick="showKonv()"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Konvertieren"/></form>
     <form target="_blank" action="https://barakkagroup.de"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Onlineshop"/></form>
     <form target="_blank" action="https://www.youtube.com/channel/UCcktuwjsq9zlu9J6Ef6HYXA/videos"><input class="btn btn-light btn-lg mainbutton" type="submit" value="YouTube"/></form>
     <form target="_blank" action="https://www.siebenaehren.de"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Spenden"/></form>
@@ -31,7 +31,7 @@
 
     <div id="konv">
     <form target="_blank" action="https://dmg-bs.de/konvertierung-zum-islam"><input class="btn btn-light btn-lg konvbutton" type="submit" value="Ich möchte telefonisch konvertieren"/></form>
-    <form action="#" onsubmit="showMain()"><input class="btn btn-light btn-lg konvbutton" type="submit" value="Zurück zur Startseite"/></form><br>
+    <form onsubmit="return false" onclick="showMain()"><input class="btn btn-light btn-lg konvbutton" type="submit" value="Zurück zur Startseite"/></form><br>
     <p class="shahada">أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰهِ</p>
     <p class="shahada">ashadu en la ilaha illallah wa ashadu anna muhammadan rasulullah</p>
     <p class="shahada">Ich bezeuge: Es gibt keinen anbetungswürdigen Gott außer Allah und Muhammad ist sein Gesandter</p>
@@ -40,10 +40,10 @@
 
     <script>
         document.getElementById("konv").hidden = true;
-        
+
         function showKonv(){
-        document.getElementById("konv").hidden = false;
         document.getElementById("main").hidden = true;
+        document.getElementById("konv").hidden = false;
         }
 
         function showMain(){
