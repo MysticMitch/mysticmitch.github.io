@@ -16,17 +16,39 @@
     
     <!-- btn btn.light btn-lg ist von bootstrap 5, mainbutton ist selbst erstellte Klasse -->
     
-    <form target="_blank" action="https://dl.dropboxusercontent.com/s/gtfavvjh82s7fna/Awakening%20from%20the%20sleep%20of%20headlessness.pdf?dl=0" download="Quran.pdf"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Quran als PDF"/></form> 
+    <div id="main">
     <form target="_blank" action="https://quranwbw.com"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Quran lesen"/></form>
     <form target="_blank" action="https://sunnah.com"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Hadithe lesen"/></form>
     <form target="_blank" action="https://youtu.be/IlnQ3PIHj2I"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Gebet erlernen"/></form>
-    <form action="konvertieren"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Konvertieren"/></form>
+    <form target="_blank" action="https://dl.dropboxusercontent.com/s/gtfavvjh82s7fna/Awakening%20from%20the%20sleep%20of%20headlessness.pdf?dl=0"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Gebetstexte"/></form>
+    <form action="#" onsubmit="showKonv()"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Konvertieren"/></form>
     <form target="_blank" action="https://barakkagroup.de"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Onlineshop"/></form>
     <form target="_blank" action="https://www.youtube.com/channel/UCcktuwjsq9zlu9J6Ef6HYXA/videos"><input class="btn btn-light btn-lg mainbutton" type="submit" value="YouTube"/></form>
     <form target="_blank" action="https://www.siebenaehren.de"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Spenden"/></form>
     <form target="_blank" id="test" action="https://www.igmg.org/gebetskalender?stadt=_DEUTSCHLAND_&id=please_choose"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Gebetszeiten"/></form>
     <form target="_blank" label="radio" name="radio" action="http://listen.radioislam.co.za:8080/radioislam.mp3"><input class="btn btn-light btn-lg mainbutton" type="submit" value="Radio Islam"/></form>
     </div>
+
+    <div id="konv">
+    <form target="_blank" action="https://dmg-bs.de/konvertierung-zum-islam"><input class="btn btn-light btn-lg konvbutton" type="submit" value="Ich möchte telefonisch konvertieren"/></form>
+    <form action="#" onsubmit="showMain()"><input class="btn btn-light btn-lg konvbutton" type="submit" value="Zurück zur Startseite"/></form>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("konv").hidden = true;
+        
+        function showKonv(){
+        document.getElementById("konv").hidden = false;
+        document.getElementById("main").hidden = true;
+        }
+
+        function showMain(){
+        document.getElementById("konv").hidden = true;
+        document.getElementById("main").hidden = false;
+        }
+    </script>
+
 
 </body>
 </html>
