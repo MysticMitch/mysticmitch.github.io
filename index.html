@@ -55,13 +55,13 @@
         function checkRadio(){
             let url = "https://listen.radioislam.org.za:8443/radioislam.mp3";
             let http = new XMLHttpRequest();
-            http.open("HEAD", url, false);
+            http.open("HEAD", url);
             http.send();
                 if (http.status >= 400){
                    window.alert("Radio Islam ist aktuell nicht live.");
                 }
                else{
-                    window.location.href.replace = url;
+                    window.location.href = url;
                }
         }
     </script>
