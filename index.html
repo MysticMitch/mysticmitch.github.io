@@ -57,7 +57,7 @@
             let http = new XMLHttpRequest();
             http.open("HEAD", url);
             http.send();
-                if (http.status >= 400){
+                if (http.status >= 400 || http.status <= 10){
                    window.alert("Radio Islam ist aktuell nicht live.");
                 }
                else{
