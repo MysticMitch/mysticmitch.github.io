@@ -40,10 +40,13 @@
 
     <script>
         document.getElementById("konv").hidden = true;
+        history.scrollRestoration = "manual";
 
         function showKonv(){
         document.getElementById("main").hidden = true;
         document.getElementById("konv").hidden = false;
+        //document.body.scrollTop = document.documentElement.scrollTop = 0;
+        window.scrollTo(0,0);
         }
 
         function showMain(){
