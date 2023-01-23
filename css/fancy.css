@@ -1,6 +1,6 @@
 html{
   height: auto;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
       background-attachment: scroll;
       background-size: cover;
       min-height: 100%;
-   
+      height: auto;
      }
 
   
