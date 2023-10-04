@@ -34,14 +34,14 @@ h1 {
   
   .mainbutton {
     margin-top: 4px; 
-    width: 180px; 
+    width: 192px; 
     color: #e0dfdc; 
     background-color: #333;
   }
   
   .konvbutton {
     margin-top: 4px; 
-    width: 342px; 
+    width: 340px; 
     color: #e0dfdc; 
     background-color: #333;
   }
@@ -55,5 +55,4 @@ h1 {
     border-radius: 2px;
     border-color: #e0dfdc;
     border-style: solid;
-
   }
